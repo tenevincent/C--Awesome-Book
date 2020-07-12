@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="ModuleA.Views.ViewA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Command="{Binding ShowDialogCommand}" Content="Show Dialog" Width="175" Height="85" />
+        <TextBlock Text="{Binding MessageReceived}" Margin="10" FontSize="36"/>
+    </StackPanel>
+</UserControl>
