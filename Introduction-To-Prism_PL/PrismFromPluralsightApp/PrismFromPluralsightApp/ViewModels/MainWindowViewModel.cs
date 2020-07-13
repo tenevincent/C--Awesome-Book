@@ -1,4 +1,5 @@
 ﻿using Prism.Mvvm;
+using PrismDemo.Core.Commands;
 
 namespace PrismFromPluralsightApp.ViewModels
 {
@@ -11,9 +12,16 @@ namespace PrismFromPluralsightApp.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainWindowViewModel()
+        private IApplicationCommands _applicationCommands;
+        public IApplicationCommands ApplicationCommands
         {
+            get { return _applicationCommands; }
+            set { SetProperty(ref _applicationCommands, value); }
+        }
 
+        public MainWindowViewModel(IApplicationCommands applicationCommands)
+        {
+            ApplicationCommands = applicationCommands;
         }
     }
 }

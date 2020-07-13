@@ -18,12 +18,18 @@ namespace ModuleB.ViewModels
         {
             eventAggregator.GetEvent<MessageSentEvent>().Subscribe(OnMessageReceived, 
                 ThreadOption.PublisherThread, false,
-                message => message.Contains("Brian"));
+                message => message.Contains("Tene"));
         }
 
         private void OnMessageReceived(string message)
         {
             Messages.Add(message);
         }
+
+
+
+
+
+
     }
 }

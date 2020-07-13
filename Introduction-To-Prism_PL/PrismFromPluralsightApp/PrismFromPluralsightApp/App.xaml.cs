@@ -3,6 +3,7 @@ using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
+using PrismDemo.Core.Commands;
 using PrismFromPluralsightApp.Adapters;
 using PrismFromPluralsightApp.Views;
 using System;
@@ -24,7 +25,7 @@ namespace PrismFromPluralsightApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterSingleton<IApplicationCommands, ApplicationCommands>();
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using Prism.Events;
 using Prism.Mvvm;
+using Prism.Regions;
 using PrismDemo.Core.Events;
 using System.Collections.ObjectModel;
 
@@ -7,6 +8,7 @@ namespace ModuleB.ViewModels
 {
     public class MessageListViewModel : BindableBase
     {
+
         MessageSentEvent _event;
 
         private ObservableCollection<string> _messages = new ObservableCollection<string>();

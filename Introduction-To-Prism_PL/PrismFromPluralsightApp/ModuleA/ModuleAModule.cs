@@ -24,30 +24,56 @@ namespace ModuleA
         }
 
 
+
+
         public void OnInitialized(IContainerProvider containerProvider)
         {
+            IRegion region = _regionManager.Regions["ContentRegion"];
 
-            _regionManager.RegisterViewWithRegion("ContentRegion", typeof(ControlA));
+            var tabA = containerProvider.Resolve<TabView>();
+            SetTitle(tabA, "Tab A");
+            region.Add(tabA);
 
+            var tabB = containerProvider.Resolve<TabView>();
+            SetTitle(tabB, "Tab B");
+            region.Add(tabB);
 
-            //  UsingViewInjection(containerProvider);
-
-            //  UsingViewDiscovery();
+            var tabC = containerProvider.Resolve<TabView>();
+            SetTitle(tabC, "Tab C");
+            region.Add(tabC);
         }
+
+        void SetTitle(TabView tab, string title)
+        {
+            (tab.DataContext as TabViewModel).Title = title;
+        }
+
+
+        //public void OnInitialized(IContainerProvider containerProvider)
+        //{
+
+        //    _regionManager.RegisterViewWithRegion("ContentRegion", typeof(TabView));
+
+
+        //    //  UsingViewInjection(containerProvider);
+
+        //    //  UsingViewDiscovery();
+        //}
+
 
         private void UsingViewDiscovery()
         {
-            _regionManager.RegisterViewWithRegion("ContentRegion", typeof(ViewB));
+            _regionManager.RegisterViewWithRegion("ContentRegion", typeof(TabView));
         }
 
         private void UsingViewInjection(IContainerProvider containerProvider)
         {
             IRegion region = _regionManager.Regions["ContentRegion"];
 
-            var view1 = containerProvider.Resolve<ControlA>();
+            var view1 = containerProvider.Resolve<TabView>();
             region.Add(view1);
 
-            var view2 = containerProvider.Resolve<ControlA>();
+            var view2 = containerProvider.Resolve<TabView>();
             view2.Content = new TextBlock()
             {
                 Text = "Hello from View 2",

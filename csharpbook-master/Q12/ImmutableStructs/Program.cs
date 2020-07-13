@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ImmutableStructs
 {
@@ -6,6 +8,25 @@ namespace ImmutableStructs
     {
         static void Main(string[] args)
         {
+
+
+            var newGuid = Guid.Parse("2a2f376f-07ea-4c53-8f50-4386eaa6ad00");
+
+
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+
+            dict.Add("keyboard", 1);
+            dict.Add("mouse", 2);
+          
+            var val = dict.Keys.ToList();
+
+
+
+            Console.WriteLine(default(int));  // output: 0
+            Console.WriteLine(default(object) is null);  // output: True
+            Console.WriteLine("Default Program output: " + default(Program));  // output: 0
+
+
             Method1();
 
             // Point nullValue = null; // will not compile
