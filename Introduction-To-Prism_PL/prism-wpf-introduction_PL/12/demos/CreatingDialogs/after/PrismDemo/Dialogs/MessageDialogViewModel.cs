@@ -17,12 +17,26 @@ namespace PrismDemo.Dialogs
         }
 
         public DelegateCommand CloseDialogCommand { get; }
+        public DelegateCommand CancelDialogCommand { get; }
 
         public event Action<IDialogResult> RequestClose;
 
         public MessageDialogViewModel()
         {
             CloseDialogCommand = new DelegateCommand(CloseDialog);
+
+            CancelDialogCommand = new DelegateCommand(OnCancelDialog);
+
+        }
+
+        private void OnCancelDialog()
+        {
+            var buttonResult = ButtonResult.Cancel;
+
+            var parameters = new DialogParameters();
+            parameters.Add("myParam", $"Dialog Closed, result: {buttonResult}");
+
+            RequestClose?.Invoke(new DialogResult(buttonResult, parameters));
         }
 
         private void CloseDialog()
@@ -30,7 +44,7 @@ namespace PrismDemo.Dialogs
             var buttonResult = ButtonResult.OK;
 
             var parameters = new DialogParameters();
-            parameters.Add("myParam", "The Dialog was closed by the user.");
+            parameters.Add("myParam", $"Dialog Closed, result: {buttonResult}");
 
             RequestClose?.Invoke(new DialogResult(buttonResult, parameters));
         }

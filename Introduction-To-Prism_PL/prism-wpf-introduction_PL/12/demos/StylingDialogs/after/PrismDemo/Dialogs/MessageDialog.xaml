@@ -6,10 +6,11 @@
 
     <prism:Dialog.WindowStyle>
         <Style TargetType="Window">
+            
             <Setter Property="Height" Value="200" />
             <Setter Property="Width" Value="400"/>
             <Setter Property="ResizeMode" Value="NoResize" />
-            <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterScreen" />
+            <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterOwner" />
         </Style>
     </prism:Dialog.WindowStyle>
     

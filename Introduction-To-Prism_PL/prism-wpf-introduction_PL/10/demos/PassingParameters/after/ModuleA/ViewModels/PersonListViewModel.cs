@@ -32,10 +32,10 @@ namespace ModuleA.ViewModels
             if (person == null)
                 return;
 
-            var p = new NavigationParameters();
-            p.Add("person", person);
+            var parameters = new NavigationParameters();
+            parameters.Add("person", person);
 
-            _regionManger.RequestNavigate("PersonDetailsRegion", "PersonDetail", p);
+            _regionManger.RequestNavigate("PersonDetailsRegion", "PersonDetail", parameters);
         }
 
         //demo code only, use a service in production code

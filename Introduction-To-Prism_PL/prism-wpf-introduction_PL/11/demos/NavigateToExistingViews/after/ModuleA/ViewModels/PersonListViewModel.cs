@@ -42,7 +42,7 @@ namespace ModuleA.ViewModels
         private void CreatePeople()
         {
             var people = new ObservableCollection<Person>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 15; i++)
             {
                 people.Add(new Person()
                 {
