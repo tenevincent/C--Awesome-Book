@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APM.Utilities.Test", "APM.U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APM.MVC", "APM.MVC\APM.MVC.csproj", "{DA04EDBA-AA99-4411-AD76-33868604835D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{B18A65B7-B02E-4885-91C4-00C8E6C243C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DA04EDBA-AA99-4411-AD76-33868604835D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA04EDBA-AA99-4411-AD76-33868604835D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA04EDBA-AA99-4411-AD76-33868604835D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18A65B7-B02E-4885-91C4-00C8E6C243C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18A65B7-B02E-4885-91C4-00C8E6C243C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18A65B7-B02E-4885-91C4-00C8E6C243C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18A65B7-B02E-4885-91C4-00C8E6C243C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
