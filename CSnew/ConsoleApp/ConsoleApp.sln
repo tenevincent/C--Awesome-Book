@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30509.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{CEF5F414-FC4E-4819-A28F-6A3698489D5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{CEF5F414-FC4E-4819-A28F-6A3698489D5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppRangesAndIndices", "ConsoleAppRangesAndIndices\ConsoleAppRangesAndIndices.csproj", "{B3B485A2-10E4-438E-B51F-76A11BEF7527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppRangesAndIndices", "ConsoleAppRangesAndIndices\ConsoleAppRangesAndIndices.csproj", "{B3B485A2-10E4-438E-B51F-76A11BEF7527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePatternsIntroduction", "ConsoleInterfacesPatternsAndExpressions\ConsolePatternsIntroduction.csproj", "{D0D2534C-3D9B-4042-92D8-4E658FB81BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePatternsRecursive", "ConsolePatternsRecursive\ConsolePatternsRecursive.csproj", "{8D3131C0-9C38-4B5D-9EA0-622CF3D010EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePatternsSwitchExp", "ConsolePatternsSwitchExp\ConsolePatternsSwitchExp.csproj", "{78573348-5256-4C7B-867C-AA82493502E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B3B485A2-10E4-438E-B51F-76A11BEF7527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3B485A2-10E4-438E-B51F-76A11BEF7527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3B485A2-10E4-438E-B51F-76A11BEF7527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D2534C-3D9B-4042-92D8-4E658FB81BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D2534C-3D9B-4042-92D8-4E658FB81BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D2534C-3D9B-4042-92D8-4E658FB81BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D2534C-3D9B-4042-92D8-4E658FB81BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3131C0-9C38-4B5D-9EA0-622CF3D010EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3131C0-9C38-4B5D-9EA0-622CF3D010EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3131C0-9C38-4B5D-9EA0-622CF3D010EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3131C0-9C38-4B5D-9EA0-622CF3D010EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78573348-5256-4C7B-867C-AA82493502E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78573348-5256-4C7B-867C-AA82493502E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78573348-5256-4C7B-867C-AA82493502E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78573348-5256-4C7B-867C-AA82493502E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
