@@ -26,7 +26,14 @@ namespace ConsoleAppRangesAndIndices
             StringBuilder builder = new StringBuilder();
             Range range = 1..5;
             Range range2 = 10..^2;
-            Range range3 =  ^2..;
+            Range range3 =  ^10..;
+
+
+            // for list use GetRange
+            var listStu = letters.ToList().GetRange(1, 2);
+
+
+
             foreach (var letter in letters[range3])
             {
                 builder.Append($"{letter} ");

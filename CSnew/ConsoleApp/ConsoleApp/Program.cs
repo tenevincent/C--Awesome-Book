@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ConsoleApp
@@ -48,6 +49,10 @@ namespace ConsoleApp
                 new Student() {FirstName = "Elizabeth", LastName = "Cooper", Email="elizabeth@outlook.com", Gpa = 3.5},
                 new Student() {FirstName = "Mike", LastName = "Olson", Email = "mike@gmail.com", Gpa = 3.22}
             };
+
+
+
+
             foreach (var student in list)
             {
                 await Task.Delay(2000);
