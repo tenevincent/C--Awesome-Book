@@ -33,7 +33,7 @@
             this.loadingGIF = new System.Windows.Forms.PictureBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pgCards = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loadingGIF)).BeginInit();
             this.SuspendLayout();
@@ -75,13 +75,15 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Input";
             // 
-            // pgCards
+            // progressBar
             // 
-            this.pgCards.Location = new System.Drawing.Point(57, 267);
-            this.pgCards.Name = "pgCards";
-            this.pgCards.Size = new System.Drawing.Size(157, 23);
-            this.pgCards.TabIndex = 4;
-            this.pgCards.Visible = false;
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar.Location = new System.Drawing.Point(53, 406);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(720, 23);
+            this.progressBar.TabIndex = 4;
+            this.progressBar.Visible = false;
             // 
             // btnCancelar
             // 
@@ -99,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.pgCards);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.loadingGIF);
@@ -119,7 +121,7 @@
         private System.Windows.Forms.PictureBox loadingGIF;
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar pgCards;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button btnCancelar;
     }
 }
